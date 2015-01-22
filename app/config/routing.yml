@@ -1,0 +1,3 @@
+dardarlt_cookie_task:
+    resource: "@DardarltCookieTaskBundle/Resources/config/routing.yml"
+    prefix:   /task1
