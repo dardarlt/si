@@ -1,5 +1,6 @@
 <?php
 
+namespace Dardarlt\Bundle\CookieTaskBundle\ValueObject;
 
 class UniqueCookie
 {
@@ -7,10 +8,14 @@ class UniqueCookie
     
     protected $value;
 
+    protected $lifetime = 3600;
+
+    protected $prefix;
+
     function __construct($value)
     {
-        $this->value = $value;
         $this->name = $this->createName($value);
+        $this->value = $value;
     }
 
     /**
@@ -18,6 +23,9 @@ class UniqueCookie
      */
     public function getName()
     {
+        if (!empty($this->prefix)) {
+            $this->name = sprintf("%s-%s", $this->prefix, $this->name);
+        }
         return $this->name;
     }
 
@@ -32,5 +40,26 @@ class UniqueCookie
     private function createName($value)
     {
        return md5($value);
+    }
+
+    public function setPrefix($prefix)
+    {
+        $this->prefix = $prefix;
+    }
+
+    /**
+     * @param mixed $lifetime
+     */
+    public function setLifetime($lifetime)
+    {
+        $this->lifetime = $lifetime;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLifetime()
+    {
+        return $this->lifetime;
     }
 }
