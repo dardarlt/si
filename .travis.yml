@@ -7,7 +7,7 @@ before_script:
   - composer install --prefer-dist
 
 script:
-  - bin/phpunit --coverage-text --coverage-clover=coverage.clover
+  - bin/phpunit -c app/ --coverage-text --coverage-clover=coverage.clover
   #- bin/phpcs --standard=PSR2 src --ignore=vendor
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
