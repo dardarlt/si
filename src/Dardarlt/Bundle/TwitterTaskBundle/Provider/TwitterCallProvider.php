@@ -7,15 +7,15 @@ class TwitterCallProvider
 
     protected $twitterConnection;
 
-    function __construct(TwitterConnection $twitterConnection)
+    public function __construct(TwitterConnection $twitterConnection)
     {
         $this->twitterConnection = $twitterConnection;
     }
 
     public function getUserTweets($user, $count = 10)
     {
-        return $this->twitterConnection->createConnection()->get("statuses/user_timeline", array("screen_name" => $user, "count" => $count));
+        return $this->twitterConnection
+            ->createConnection()
+            ->get("statuses/user_timeline", array("screen_name" => $user, "count" => $count));
     }
-
-
 }

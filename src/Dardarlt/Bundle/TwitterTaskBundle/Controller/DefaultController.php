@@ -7,9 +7,15 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function tweetsAction($person)
     {
-        $tweets = $this->get('tt.twitter_call')->getUserTweets('darbasonline', 10);
-        return new JsonResponse($tweets);
+        $personService = sprintf('tt.twitter.%s', $person );
+
+        if ($this->has($personService)) {
+            $tweets = $this->get($personService);
+            return $this->render('DardarltTwitterTaskBundle:Default:tweets.html.twig', array('tweets' => $tweets));
+        }
+
+        throw $this->createNotFoundException('This account is not implemented');
     }
 }

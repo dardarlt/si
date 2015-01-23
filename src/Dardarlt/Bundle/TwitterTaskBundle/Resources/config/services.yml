@@ -1,4 +1,5 @@
-
+parameters:
+    tweets_per_page: 10
 
 services:
     tt.twitter_connection:
@@ -8,3 +9,17 @@ services:
     tt.twitter_call:
         class: Dardarlt\Bundle\TwitterTaskBundle\Provider\TwitterCallProvider
         arguments: [@tt.twitter_connection]
+
+    tt.twitter_acount_factory:
+        class: Dardarlt\Bundle\TwitterTaskBundle\Factory\TwitterAccountFactory
+        arguments: [@tt.twitter_call]
+
+    tt.twitter.justin_bieber:
+        class: Dardarlt\Bundle\TwitterTaskBundle\Provider\TwitterAccountManager
+        factory: [@tt.twitter_acount_factory, getAccountTweets]
+        arguments: ["justinbieber", %tweets_per_page%]
+
+    tt.twitter.katy_perry:
+            class: Dardarlt\Bundle\TwitterTaskBundle\Provider\TwitterAccountManager
+            factory: [@tt.twitter_acount_factory, getAccountTweets]
+            arguments: ["katyperry", %tweets_per_page%]
