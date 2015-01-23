@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6f14ecb5401a00dc28185a5e61097138",
+    "hash": "0180fab4207b82e92aedc8903784fdb6",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1558,6 +1558,51 @@
             "time": "2015-01-07 14:47:29"
         },
         {
+            "name": "themattharris/tmhoauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themattharris/tmhOAuth.git",
+                "reference": "455552d6c57549632644b6c9ac9204766be2b5ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themattharris/tmhOAuth/zipball/455552d6c57549632644b6c9ac9204766be2b5ee",
+                "reference": "455552d6c57549632644b6c9ac9204766be2b5ee",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "tmhOAuth": ""
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "themattharris",
+                    "email": "matt@themattharris.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An OAuth library written in PHP by @themattharris",
+            "keywords": [
+                "oauth",
+                "twitter"
+            ],
+            "support": {
+                "issues": "https://github.com/themattharris/tmhOAuth/issues",
+                "source": "https://github.com/themattharris/tmhOAuth/tree/0.8.4"
+            },
+            "time": "2014-08-06 22:29:35"
+        },
+        {
             "name": "twig/extensions",
             "version": "v1.2.0",
             "source": {
@@ -2573,6 +2618,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "themattharris/tmhoauth": 20,
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,

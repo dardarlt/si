@@ -9,7 +9,7 @@ class DefaultController extends Controller
 {
     public function indexAction($name)
     {
-        $data = $this->get('tt.twitter_provider')->getStatuses();
-        return new JsonResponse($data);
+        $tweets = $this->get('tt.twitter_call')->getUserTweets('darbasonline', 10);
+        return new JsonResponse($tweets);
     }
 }

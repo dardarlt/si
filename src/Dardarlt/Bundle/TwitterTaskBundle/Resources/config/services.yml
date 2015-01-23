@@ -1,6 +1,10 @@
+
+
 services:
-#    dardarlt_twitter_task.example:
-#        class: Dardarlt\Bundle\TwitterTaskBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
-    tt.twitter_provider:
-        class: Dardarlt\Bundle\TwitterTaskBundle\TwitterProvider
+    tt.twitter_connection:
+        class: Dardarlt\Bundle\TwitterTaskBundle\Provider\TwitterConnection
+        arguments: [%consumer_key%, %consumer_secret%]
+
+    tt.twitter_call:
+        class: Dardarlt\Bundle\TwitterTaskBundle\Provider\TwitterCallProvider
+        arguments: [@tt.twitter_connection]
