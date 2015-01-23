@@ -1,6 +1,6 @@
 dardarlt_twitter_task:
     resource: "@DardarltTwitterTaskBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /task2
 
 dardarlt_cookie_task:
     resource: "@DardarltCookieTaskBundle/Resources/config/routing.yml"

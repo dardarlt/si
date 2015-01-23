@@ -2,3 +2,5 @@ services:
 #    dardarlt_twitter_task.example:
 #        class: Dardarlt\Bundle\TwitterTaskBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
+    tt.twitter_provider:
+        class: Dardarlt\Bundle\TwitterTaskBundle\TwitterProvider
