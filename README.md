@@ -4,7 +4,7 @@
 ```
 composer update
 ```
-Add to app/config/parameters.yml your twitter app credentials from:
+* Add to app/config/parameters.yml your twitter app credentials from:
     consumer_key: ***
     consumer_secret: ***
 
@@ -13,7 +13,7 @@ Add to app/config/parameters.yml your twitter app credentials from:
 php app/console server:run
 ```
 
-Please visit:
-/task1/hello/world
-/task2/tweets/katy_perry
-/task2/tweets/justin_bieber
+* Please visit:
+- /task1/hello/world
+- /task2/tweets/katy_perry
+- /task2/tweets/justin_bieber
