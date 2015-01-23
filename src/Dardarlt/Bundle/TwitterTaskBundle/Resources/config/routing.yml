@@ -1,3 +1,4 @@
-dardarlt_twitter_task_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: DardarltTwitterTaskBundle:Default:index }
+dardarlt_twitter_task_tweets:
+    path:     /tweets/{person}
+    defaults: { _controller: DardarltTwitterTaskBundle:Default:tweets }
+
