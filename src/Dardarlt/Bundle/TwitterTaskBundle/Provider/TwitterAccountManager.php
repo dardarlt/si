@@ -3,7 +3,6 @@
 
 namespace Dardarlt\Bundle\TwitterTaskBundle\Provider;
 
-
 class TwitterAccountManager
 {
     protected $accountTweets;

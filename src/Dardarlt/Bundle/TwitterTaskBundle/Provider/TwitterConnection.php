@@ -22,8 +22,14 @@ class TwitterConnection
         $this->consumerSecret = $consumerSecret;
     }
 
-    public function getConnectionWithAccessToken($oauth_token = null, $oauth_token_secret = null) {
-        $connection = new TwitterOAuth($this->getConsumerKey(), $this->getConsumerSecret(), $oauth_token, $oauth_token_secret);
+    public function getConnectionWithAccessToken($oauth_token = null, $oauth_token_secret = null)
+    {
+        $connection = new TwitterOAuth(
+            $this->getConsumerKey(),
+            $this->getConsumerSecret(),
+            $oauth_token,
+            $oauth_token_secret
+        );
         return $connection;
     }
 
@@ -64,4 +70,3 @@ class TwitterConnection
         return $url = $this->createConnection()->url("oauth/authorize", array("oauth_token" => $this->oauthToken));
     }
 }
- 

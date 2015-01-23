@@ -1,5 +1,5 @@
 <?php
-
+namespace Dardarlt\Bundle\CookieTaskBundle\Tests\Factory;
 
 use Dardarlt\Bundle\CookieTaskBundle\Factory\CookieFactory;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;

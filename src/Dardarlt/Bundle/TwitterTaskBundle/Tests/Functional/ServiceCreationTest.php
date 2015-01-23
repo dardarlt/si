@@ -1,5 +1,6 @@
 <?php
 
+namespace Dardarlt\Bundle\TwitterTaskBundle\Tests\Functional;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

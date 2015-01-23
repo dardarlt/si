@@ -1,7 +1,10 @@
 <?php
 
+namespace Dardarlt\Bundle\TwitterTaskBundle\Tests\Factory;
 
-class TwitterAccountFactoryTest extends \Symfony\Bundle\FrameworkBundle\Test\WebTestCase
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+
+class TwitterAccountFactoryTest extends WebTestCase
 {
     public function testReturnsUserTweets()
     {

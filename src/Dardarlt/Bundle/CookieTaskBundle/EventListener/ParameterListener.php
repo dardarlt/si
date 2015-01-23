@@ -9,7 +9,7 @@ class ParameterListener
 {
     protected $cookieFactory;
 
-    function __construct(CookieFactory $cookieFactory)
+    public function __construct(CookieFactory $cookieFactory)
     {
         $this->cookieFactory = $cookieFactory;
     }

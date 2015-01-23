@@ -12,7 +12,7 @@ class UniqueCookie
 
     protected $prefix;
 
-    function __construct($value)
+    public function __construct($value)
     {
         $this->name = $this->createName($value);
         $this->value = $value;
@@ -39,7 +39,7 @@ class UniqueCookie
 
     private function createName($value)
     {
-       return md5($value);
+        return md5($value);
     }
 
     public function setPrefix($prefix)

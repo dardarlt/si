@@ -1,6 +1,8 @@
 <?php
 
 
+namespace Dardarlt\Bundle\CookieTaskBundle\Tests\ValueObject;
+
 use Dardarlt\Bundle\CookieTaskBundle\ValueObject\UniqueCookie;
 use Symfony\Bundle\SecurityBundle\Tests\Functional\WebTestCase;
 

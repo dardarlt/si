@@ -28,7 +28,8 @@
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",
-        "phpunit/phpunit": "dev-master"
+        "phpunit/phpunit": "dev-master",
+        "squizlabs/php_codesniffer": "2.*"
     },
     "scripts": {
         "post-root-package-install": [
