@@ -1,3 +1,5 @@
+[![Travis build](https://travis-ci.org/dardarlt/si.svg?branch=master)](https://travis-ci.org/dardarlt/si.svg?branch=master)  [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dardarlt/si/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dardarlt/si/?branch=master)
+
 # SI task
 * Clone this directory
 * Run:
