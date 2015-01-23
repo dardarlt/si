@@ -1,6 +1,12 @@
 <h1>Tweets</h1>
-<ul>
-    {%  for tweet in tweets %}
-        <li>{{ tweet.text }}</li>
-    {% endfor %}
-</ul>
+<div class="tweet-list">
+    <ul>
+        {%  for tweet in tweets %}
+            <li>
+                <div class="tweet-text"> {{ tweet.text }}</div>
+                <div class="posted-at">Posted on: {{ tweet.created_at|date("m/d/Y") }}</div>
+                <div class="tweet-extra-data">Retweets: {{ tweet.retweet_count }} Favorites: {{ tweet.favorite_count }} </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

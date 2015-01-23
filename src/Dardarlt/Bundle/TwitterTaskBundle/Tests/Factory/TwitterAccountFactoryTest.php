@@ -26,4 +26,3 @@ class TwitterAccountFactoryTest extends \Symfony\Bundle\FrameworkBundle\Test\Web
             ->getMock();
     }
 }
- 

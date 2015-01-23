@@ -9,7 +9,7 @@ class DefaultController extends Controller
 {
     public function tweetsAction($person)
     {
-        $personService = sprintf('tt.twitter.%s', $person );
+        $personService = sprintf('tt.twitter.%s', $person);
 
         if ($this->has($personService)) {
             $tweets = $this->get($personService);
