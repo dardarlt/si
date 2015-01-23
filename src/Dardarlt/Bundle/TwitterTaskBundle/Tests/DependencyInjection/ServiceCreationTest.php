@@ -1,6 +1,6 @@
 <?php
 
-namespace Dardarlt\Bundle\TwitterTaskBundle\Tests\Functional;
+namespace Dardarlt\Bundle\TwitterTaskBundle\Tests\DependencyInjection;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
